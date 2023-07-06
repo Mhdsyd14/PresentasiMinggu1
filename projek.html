@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesoome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Nav -->
+    <div class="navbar">
+      <nav>
+        <a href="#" class="logo"><img src="Aset/Logo Mi.png" alt="Logo" /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Projek</a></li>
+        </ul>
+        <div class="right">
+          <a class="cta" href="form.html"><button>Kontak</button></a>
+        </div>
+      </nav>
+    </div>
+    <!-- end nav -->
+    <div class="projek">
+      <div class="Tambahkan">
+        <h1>Tambahkan Projek</h1>
+      </div>
+      <form class="Anakprojek" onsubmit="tambahData(event)">
+        <label for="nama">Project name:</label><br />
+        <input id="nama" type="text" placeholder="Nama Project" /><br />
+        <div class="tanggal">
+          <div class="tanggalKiri">
+            <label for="tanggalMulai">Start Date :</label>
+            <input id="tanggalMulai" type="date" />
+          </div>
+          <div class="tanggalKanan">
+            <label for="tanggakAkhir"> End Date :</label>
+            <input id="tanggalAkhir" type="date" />
+          </div>
+        </div>
+        <label for="isi">Description :</label><br />
+        <textarea id="isi" placeholder="Isi Description"></textarea>
+        <div class="checkbox-list">
+          <label for="teknologi"> Teknologi</label>
+          <div class="checkbox-row">
+            <label for="react">
+              <input id="react" type="checkbox" name="reactjs" class="ceklis" />
+              ReactJS
+            </label>
+            <label for="node">
+              <input id="node" type="checkbox" name="nextjs" class="ceklis" />
+              NodeJS
+            </label>
+          </div>
+          <div class="checkbox-row">
+            <label for="laravel">
+              <input
+                id="laravel"
+                type="checkbox"
+                name="laravel"
+                class="ceklis"
+              />
+              Laravel
+            </label>
+            <label for="python">
+              <input id="python" type="checkbox" name="python" class="ceklis" />
+              Python
+            </label>
+          </div>
+          <label for="gambar">Upload Image :</label><br />
+          <div class="upload">
+            <input id="gambar" type="file" />
+          </div>
+          <div class="kirim">
+            <input type="submit" value="Kirim" />
+            <!-- <button type="submit" onclick="tambahData(event)">Kirim</button> -->
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Kartu -->
+
+    <div class="mainKartu" id="konten">
+      <!-- <div class="ProjectKartu">
+        <img class="FotoKartu" src="Aset/398 x 355.png" alt="" />
+        <div class="TextKartu">
+          <span class="Title">
+            <h3>Dumbways Mobile APP</h3>
+          </span>
+          <h4>Durasi 3 bulan</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            aspernatur corporis at a pariatur fugiat exercitationem dolorem ad
+            in obcaecati distinctio perferendis accusamus voluptatibus quas ea
+            veritatis earum, voluptates officiis.
+          </p>
+          <div class="KartuIcon">
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-laravel"></i>
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-node-js"></i>
+          </div>
+          <div class="TombolKartu">
+            <button>Edit</button>
+            <button>Delete</button>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

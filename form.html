@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <div class="navbar">
+      <nav>
+        <a href="#" class="logo"><img src="Aset/Logo Mi.png" alt="Logo" /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projek.html">Projek</a></li>
+        </ul>
+        <div class="right">
+          <a class="cta" href="form.html"><button>Kontak</button></a>
+        </div>
+      </nav>
+    </div>
+    <!-- end nav -->
+    <form class="formulir">
+      <div class="formulirAnak">
+        <h1>Formulir Kontak</h1>
+        <div class="form-group">
+          <label for="nama">Nama:</label><br />
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            required
+            placeholder="Isi Nama Kamu"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Alamat Email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Nomor Telepon:</label><br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            placeholder="Nomor Handphone"
+          />
+        </div>
+        <div class="form-group">
+          <label> Subject </label><br />
+          <select>
+            <option id="option">Pilih Posisi ...</option>
+            <option>Frontend Developer</option>
+            <option>Backend Developer</option>
+            <option>Fullstack Developer</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="pesan">Pesan:</label><br />
+          <textarea id="pesan" placeholder="Isi Pesan"></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Kirim" onclick="submitData(event)" />
+        </div>
+      </div>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
